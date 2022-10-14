@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Yusei Magic', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6{
+            font-weight: normal;
+            padding-left: 5px;
+        }
+        a{
+            color: white;
+        }
+        .container{
+            width: 80%;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        header{
+            background-color: #9f1a1f;
+            color: white;
+            margin-bottom: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .menu img{
+            width: 10%;
+            margin: 5px;
+        }
+        .menu-name ul li{
+            display: inline-block;
+            padding: 10px;
+            line-height: 30px;
+        }
+        .menu{
+            justify-content: space-between;
+            display: flex;
+        }
+        .menu a:hover{
+            color: yellow;
+            transition: 0.8s;
+        }
+        .titulo{
+            background-color: #b99700b7;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+        .sub-titulo{
+            margin: 8px;
+        }
+        .container-p{
+            width: 95%;
+            margin: 0 auto;
+            margin-top: 5px;
+        }
+        .container-p p{
+            margin-bottom: 5px;
+        }
+        .col-livros img{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .col-livros{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            column-gap: 5px;
+        }
+        </style>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                    <img src="../imagens/logo.png" alt="">
+                <div class="menu-name">
+                    <ul>
+                        <a href=""><li>Home</li></a>
+                        <a href=""><li>Historia</li></a>
+                        <a href=""><li>Livros</li></a>
+                        <a href=""><li>Sobre</li></a>
+                        <a href=""><li>Contato</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container space">
+            <h2 class="titulo">Livro 5 - Harry Potter e a Pedra filosofal</h2>
+        </div>
+    </section>
+</body>
+</html>
