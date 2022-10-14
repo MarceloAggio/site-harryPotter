@@ -7,7 +7,7 @@
     <title>Harry Potter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link rel="stylesheet" href="css/style.css">
     <style>
         *{
             margin: 0;
@@ -28,10 +28,7 @@
             max-width: 1440px;
             margin: 0 auto;
         }
-        footer{
-            background-color: #9f1a1f;
-            width: 100%;
-        }
+
         header{
             background-color: #9f1a1f;
             color: white;
@@ -87,6 +84,9 @@
             margin-top: 10px;
             height: 190px;
         }
+        .col-livros img:hover{
+            transform: scale3d(1.1, 1.1, 1);
+        }
         .col-livros{
             display: grid;
             grid-template-columns: repeat(7,1fr);
@@ -101,68 +101,21 @@
         .space{
             margin-top: 65px;
         }
-        </style>
-        <style>
-            .slideshow-container {
-            max-width: 100%;
-            position: relative;
-            margin: auto;
-            margin-top: 10px;            
+        .inline{
+            display: inline-block;
+            margin-top: 10px;
+            text-align: center;
         }
-
-        /* Hide the images by default */
-        .mySlides {
-            display: none;
+        .canais img{
+            width: 95%;
+            border-radius: 150px;
+            margin-top: 15px;
         }
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 48px;
-    width: 100%;
-    text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
+        .canais{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+        }
         </style>
 </head>
 <body>
@@ -173,9 +126,9 @@
                 <div class="menu-name">
                     <ul>
                         <a href=""><li>Home</li></a>
-                        <a href="#historia"><li>Historia</li></a>
                         <a href="#livros"><li>Livros</li></a>
                         <a href="#filmes"><li>Filmes</li></a>
+                        <a href="#filmes"><li>Tematicos</li></a>
                         <a href="#sobre"><li>Sobre</li></a>
                         <a href="contato.html"><li>Contato</li></a>
                     </ul>
@@ -280,6 +233,13 @@
                     <a href="livros/livro5.html"><img src="imagens/livro5.jpg" alt=""></a>
                     <a href="livros/livro6.html"><img src="imagens/livro6.jpg" alt=""></a>
                     <a href="livros/livro7.html"><img src="imagens/livro7.jpg" alt=""></a>
+                    <h5 class="inline">Pedra Filosofal</h5>
+                    <h5 class="inline">Camara Secreta</h5>
+                    <h5 class="inline">Prisioneiro de Azkaban</h5>
+                    <h5 class="inline">Calice de Fogo</h5>
+                    <h5 class="inline">Ordem da Fenix</h5>
+                    <h5 class="inline">Principe Mestiço</h5>
+                    <h5 class="inline">Reliquias da Morte</h5>
                 </div>
             </div>
             <div class="part-2" id="filmes">
@@ -292,7 +252,41 @@
                     <a href="filmes/filme5.html"><img src="imagens/filme5.jpg" alt=""></a>
                     <a href="filmes/filme6.html"><img src="imagens/livro6.jpg" alt=""></a>
                     <a href="filmes/filme7.html"><img src="imagens/filme78.jpg" alt=""></a>
+                    <h5 class="inline">Pedra Filosofal</h5>
+                    <h5 class="inline">Camara Secreta</h5>
+                    <h5 class="inline">Prisioneiro de Azkaban</h5>
+                    <h5 class="inline">Calice de Fogo</h5>
+                    <h5 class="inline">Ordem da Fenix</h5>
+                    <h5 class="inline">Principe Mestiço</h5>
+                    <h5 class="inline">Reliquias da Morte</h5>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="titulo">Tematicos</h2>
+            <h2 class="Sub-titulo" style="margin: 10px auto 5px 5px;">Canais</h2>
+            <div class="canais">
+                <a href="https://www.youtube.com/c/Caldeir%C3%A3oFurado" target="_blank"><img src="imagens/tema1.jpg" alt=""></a>
+                <a href="https://www.youtube.com/user/observpotter" target="_blank"><img src="imagens/tema2.jpg" alt=""></a>
+                <a href="https://www.youtube.com/c/Caldeir%C3%A3oFurado" target="_blank"><img src="imagens/tema1.jpg" alt=""></a>
+                <a href="https://www.youtube.com/user/observpotter" target="_blank"><img src="imagens/tema2.jpg" alt=""></a>
+                <h3 class="inline">Caldeirão Furado</h3>
+                <h3 class="inline">Observatorio Potter</h3>
+                <h3 class="inline">Caldeirão Furado</h3>
+                <h3 class="inline">Observatorio Potter</h3>
+            </div>
+            <h2 class="Sub-titulo" style="margin: 15px auto 5px 5px;">Restaurantes</h2>
+            <div class="canais">
+                <a href="https://www.vassouraquebrada.com.br/" target="_blank"><img src="imagens/tema3.jpg" alt=""></a>
+                <a href="https://www.magiaebruxaria.com.br/" target="_blank"><img src="imagens/tema4.jfif" alt=""></a>
+                <a href="https://www.vassouraquebrada.com.br/" target="_blank"><img src="imagens/tema3.jpg" alt=""></a>
+                <a href="https://www.magiaebruxaria.com.br/" target="_blank"><img src="imagens/tema4.jfif" alt=""></a>
+                <h3 class="inline">Vassoura Quebrada</h3>
+                <h3 class="inline">Magia & Bruxaria</h3>
+                <h3 class="inline">Vassoura Quebrada</h3>
+                <h3 class="inline">Magia & Bruxaria</h3>
             </div>
         </div>
     </section>
@@ -308,13 +302,20 @@
     <br>
     <hr>
     <footer style="text-align: center;">
-        <!-- logo: Wikipedia -->
+        <br>
         <p>Desenvolvido por Marcelo || 2022</p>
         <a href="https://github.com/MarceloAggio" target="_blank" style="color: black;">My GIT</a>
         <br>
         <br>
         <br>
         <br>
+        links
+        <br>
+        logo: Wikipedia, imagens: adoro cinema, textos: Wikipedia
+        <br>
+        temas:
+        <br>
+        canais: Caldeirao Furado e Observatorio Potter, Restaurantes: Magia & Bruxaria e Vassoura Quebrada
     </footer>
     <script src="sistema/script.js"></script>
 </body>
